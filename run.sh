@@ -17,6 +17,7 @@ echo "PRESS ENTER FOR THE FOLLOWING PROMPTS"
 ssh-keygen
 cp /root/.ssh/id_rsa.pub .
 docker build -t ansible_ssh:V1 .
+rm -rf id_rsa.pub
 clear
 docker-compose up -d 
 echo "
