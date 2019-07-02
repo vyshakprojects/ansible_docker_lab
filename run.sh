@@ -8,13 +8,14 @@ apt update
 apt-cache policy docker-ce
 apt install -y docker-ce
 apt-get install docker-compose -y
+apt install python3-pip -y
 clear
 pip3 install ansible
 sleep 2
 clear
 echo "PRESS ENTER FOR THE FOLLOWING PROMPTS"
 ssh-keygen
-mv /root/.ssh/id_rsa.pub .
+cp /root/.ssh/id_rsa.pub .
 docker build -t ansible_ssh:V1 .
 clear
 docker-compose up -d 
