@@ -1,7 +1,7 @@
 !#/bin/bash
 clear;
 apt update -y
-apt install python3-pip -y
+python3 get-pip.py
 pip3 install ansible
 apt install -y apt-transport-https ca-certificates curl software-properties-common
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
