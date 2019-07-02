@@ -9,6 +9,7 @@ apt-cache policy docker-ce
 apt install -y docker-ce
 clear
 systemctl status docker
+pip3 install ansible
 sleep 2
 clear
 echo "PRESS ENTER FOR THE FOLLOWING PROMPTS"
